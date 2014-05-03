@@ -2,8 +2,8 @@ TAIL=""
 TBM=""
 case $HOST in
  "-l")
-   LINK="http://"+$2 
-   LINK=$(echo $LINK  | tr -d '+')
+   LINK="http://$2"
+   #LINK=$(echo $LINK  | tr -d '+')
    open $LINK
    exit 0
    ;;
